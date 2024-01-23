@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet" href="static/result.css">
+
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <ul>
+        {% for label, score in predictions %}
+            <li>{{ label }}: {{ score }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
